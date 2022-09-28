@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+.product-head h2 {
+  font: normal normal bold 32px "Merriweather" !important;
+  color: #0e1843;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.product-head p {
+  font: normal normal normal 18px "Merriweather";
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+.product-head {
+  margin-top: 50px;
+}
+.product-image-flex {
+  width: 100%;
+  height: auto;
+  border: 2px solid #e9ecef;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.product-card-two {
+  align-self: flex-end;
+  background-color: #e9ecef;
+  text-align: center;
+  width: 300px;
+  height: 330px;
+  position: relative;
+}
+.product-card-one,
+.product-card-three {
+  align-self: flex-start;
+  background-color: #e9ecef;
+  text-align: center;
+  width: 320px;
+  height: 320px;
+  position: relative;
+}
+.product-image-flex img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: contain;
+  padding: 15px;
+}
+.product-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: #0e1843;
+  font: normal bold 26px "merriweather";
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.product-caption:hover {
+  opacity: 1;
+  border: 3px solid #e9ecef;
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+  .product-head h3 {
+    font: normal normal bold 24px "Merriweather";
+  }
+  .product-head p {
+    font: normal normal normal 14px "Merriweather";
+    line-height: 25px;
+  }
+  .product-image-flex {
+    gap: 20px;
+  }
+}

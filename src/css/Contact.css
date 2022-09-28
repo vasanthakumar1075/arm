@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+.contact-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  margin-bottom: 20px;
+}
+.form-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+}
+.form-input-two {
+  width: 100%;
+  height: 100px;
+  outline: none;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal normal 16px "Merriweather";
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.submit-btn {
+  border-style: none;
+  padding: 10px;
+  background-image: linear-gradient(to right, #9cecfb, #0052d4);
+  border-radius: 3px;
+}
+.contact-main h3,
+h4 {
+  font: normal normal bold 25px "Merriweather";
+  color: #0e1843;
+}
+.contact-main p {
+  font: normal normal normal 17px "Merriweather";
+}
+.contact-main span {
+  font: normal normal bold 17px "Merriweather";
+}
+.contact-details {
+  margin-top: 40px;
+}
+.contact-details h5 {
+  font: normal normal bold 18px "Merriweather";
+}
+.contact-address {
+  margin-top: 55px;
+}
+.contact-right-flex h4 {
+  margin-bottom: 15px;
+}
+
+/* Media Querry */
+
+@media only screen and (max-width: 760px) {
+  .contact-main h3,
+  h4 {
+    font: normal normal bold 21px "Merriweather";
+  }
+  .contact-main h5 {
+    font: normal normal bold 16px "Merriweather";
+  }
+  .contact-main span {
+    font: normal normal bold 15px "Merriweather";
+  }
+  .contact-main p {
+    font: normal normal normal 15px "Merriweather";
+  }
+  .contact-address {
+    margin-bottom: 3rem;
+  }
+}

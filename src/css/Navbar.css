@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+
+.Navbar {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-left: 30px;
+}
+.nav-top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 5px;
+}
+.nav-logo {
+  font: normal normal bold 28px "Merriweather";
+  color: #0e1843;
+}
+.nav-bottom-content {
+  font: normal normal bold 20px "Merriweather";
+}
+.Navbar > .nav-items > a {
+  color: black;
+  font: normal normal normal 18px "Merriweather";
+  text-decoration: none;
+  margin: 20px;
+  position: relative;
+  opacity: 0.9;
+}
+.Navbar > .nav-items {
+  margin-right: 20px;
+}
+.Navbar > .nav-items > a:hover {
+  opacity: 1;
+  color: red;
+  transition: all 0.5s ease;
+}
+.Navbar > .nav-items > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.45s;
+}
+.Navbar > .nav-items > a:hover::before {
+  width: 100%;
+}
+.Navbar > .nav-toggle {
+  display: none;
+}
+.download {
+  background-color: #0e1843;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Media Querry */
+
+@media (max-width: 960px) {
+  .Navbar > .nav-items {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    background: #0e1843;
+    border-radius: 15px;
+    width: 100%;
+    height: 45%;
+    color: white;
+    transform: translateX(-100%);
+    transition: all 0.45s;
+    margin-top: 20px;
+  }
+  .nav-bottom {
+    display: none;
+  }
+  .nav-logo-image {
+    background-color: white;
+    border-radius: 20px;
+  }
+  .Navbar {
+    background-color: #0e1843;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .Navbar > .nav-items > a {
+    color: white;
+  }
+  .Navbar > .nav-items.open {
+    transform: translateX(0);
+  }
+  .Navbar > .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 25px;
+  }
+  .nav-toggle > .bar {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.45s ease-in-out;
+  }
+  .nav-toggle > .bar::before,
+  .nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+  }
+  .nav-toggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+  }
+  .nav-toggle > .bar::after {
+    width: 32px;
+    transform: translateX(8px);
+  }
+  .nav-toggle.open > .bar {
+    transform: translateX(-40px);
+    background: transparent;
+  }
+  .nav-toggle.open > .bar::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+  }
+  .nav-toggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+}

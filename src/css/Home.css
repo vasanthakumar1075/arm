@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+.main-img img {
+  height: 90vh;
+  width: 100%;
+}
+.about-content {
+  margin-top: 5rem;
+  margin-bottom: 100px;
+}
+.about-content h3 {
+  font: normal normal bold 32px "Merriweather";
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 45px;
+  color: #0e1843;
+}
+.about-content p {
+  font: normal normal normal 20px "Merriweather";
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 50px;
+}
+.infrastructure {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(../Assets/backdrop.png);
+  background-position: -50px;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+}
+.infra-content-list {
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+.second-subtitle {
+  color: #0e1843;
+  font: normal normal bold 19px "Merriweather";
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.infra-title {
+  font: normal normal bold 28px "Merriweather";
+  color: #0e1843;
+  margin-bottom: 20px;
+}
+.infra-content P {
+  font: normal normal normal 19px "Merriweather";
+  line-height: 35px;
+}
+.infra-image img {
+  width: 100%;
+  height: 900px;
+  border-radius: 25px;
+}
+.cert-list img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+.cert-name {
+  font: normal bold 28px "Merriweather";
+  color: #0e1843;
+  margin-top: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.certificates {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  background-color: rgb(218, 207, 207);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cert-list img:hover {
+  transition: 0.6s ease-in;
+  object-fit: contain;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* Owner List */
+
+.owner-title {
+  font: normal bold 28px "Merriweather";
+  color: #0e1843;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.owner-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.owner-main {
+  width: 650px;
+  height: auto;
+  background-color: #0e1843;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.owner-list img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.owner-detail {
+  font: normal normal 16px/30px "Merriweather";
+  letter-spacing: 0.5px;
+  color: white;
+}
+.owner-main span {
+  font: normal normal 20px "Merriweather";
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Media Querry */
+
+@media only screen and (max-width: 760px) {
+  .Home h3 {
+    font: normal normal bold 21px "Merriweather";
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .Home p {
+    font: normal normal normal 16px "Merriweather";
+    letter-spacing: 0.5px;
+    /* text-align: center; */
+    line-height: 30px;
+  }
+  .main-img img {
+    height: 40vh;
+    width: 100%;
+  }
+  .about-content {
+    margin-bottom: 0%;
+    margin-top: 1rem;
+  }
+  .infra-content-list {
+    margin-bottom: 0%;
+  }
+  .owner-title {
+    margin-top: 1rem;
+    margin-bottom: 0%;
+  }
+  .cert-name {
+    margin-top: 3rem;
+  }
+  .owner-main {
+    flex-wrap: wrap;
+  }
+  .owner-list {
+    gap: 0;
+  }
+}

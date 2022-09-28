@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+
+.specification {
+  margin-top: 3rem;
+  border-radius: 70px;
+  margin-bottom: 2rem;
+}
+.specification h3 {
+  font: normal normal bold 26px/1 "Merriweather";
+  letter-spacing: 1px;
+  color: #1e2e79;
+}
+.specification p {
+  font: normal normal normal 20px/40px "Merriweather";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.backdrop {
+  background-image: url(../Assets/backdrop.png);
+  background-position: -150px;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+}
+.desc-list {
+  display: flex;
+  gap: 50px;
+}
+.specification li {
+  font: normal normal 22px/1 "Merriweather";
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.product-img-flex {
+  width: 100%;
+  height: auto;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid #1e2e79;
+  margin-top: 2rem;
+}
+
+.product-img-flex img {
+  border-radius: 10px;
+  /* width: 100%;
+  height: auto; */
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 760px) {
+  .specification li {
+    margin-bottom: 10px;
+    font: normal normal 18px/1 "Merriweather";
+  }
+  .specification p {
+    font: normal normal 18px/33px "Merriweather";
+  }
+  .specification h3 {
+    font: normal normal bold 22px/1 "Merriweather";
+    margin-bottom: 1rem;
+  }
+}

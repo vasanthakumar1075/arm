@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+.about {
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+.about-main {
+  display: flex;
+  gap: 120px;
+}
+.about-left {
+  background-image: url(../Assets/backdrop.png);
+  background-position: -150px;
+  background-size: 1500px;
+  background-repeat: no-repeat;
+}
+.about p {
+  text-align: left;
+  line-height: 30px;
+}
+.about h3 {
+  font: normal normal bold 30px "Merriweather";
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  letter-spacing: 0.5px;
+  color: #0e1843;
+}
+.about-top {
+  font: normal normal bold 20px "Merriweather";
+  letter-spacing: 1px;
+}
+.para-one {
+  font: normal normal normal 17px "Merriweather";
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.about h4,
+h5 {
+  font: normal normal bold 17px "Merriweather";
+  margin-bottom: 25px;
+}
+
+/* About Right Contents */
+
+.about-right {
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 100px 50px 50px 50px;
+  border-radius: 25px;
+}
+.about-right-content {
+  margin-bottom: 50px;
+}
+.about-right-content h5 {
+  font: normal normal bold 18px/1 "Merriweather";
+}
+.about-right-content span {
+  font: normal normal normal 18px/1 "Merriweather";
+}
+.about-right-content p {
+  font: normal normal normal 18px/1 "Merriweather";
+}
+
+/* Media Querry */
+
+@media only screen and (max-width: 760px) {
+  .about h3 {
+    font: normal normal bold 21px "Merriweather";
+  }
+  .about-top {
+    font: normal normal bold 18px "Merriweather";
+    letter-spacing: 1px;
+  }
+  .para-one {
+    font: normal normal normal 13px "Merriweather";
+  }
+  .about-main {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

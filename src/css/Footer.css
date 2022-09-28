@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap");
+
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0e1843;
+  padding-top: 65px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  height: auto;
+}
+.footer-right-one {
+  margin-top: 30px;
+}
+.Footer h4 {
+  font: normal normal bold 24px "Merriweather";
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  color: white;
+}
+.Footer p {
+  font: normal normal normal 18px "Merriweather";
+  color: white;
+  line-height: 30px;
+}
+.footer-middle li {
+  list-style: none;
+}
+.footer-middle li a {
+  list-style: none;
+  color: white;
+  font: normal normal normal 18px "Merriweather";
+  text-decoration: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 40px;
+  margin-left: -30px;
+}
+.footer-middle li a:hover {
+  color: red;
+}
+.footer-right img {
+  width: 35px;
+  margin-right: 10px;
+}
+.facebook:hover {
+  background-color: #0052d4;
+  padding: 5px;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+.instagram:hover {
+  background-color: #833ab4;
+  padding: 5px;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+.twitter:hover {
+  background-color: #0052d4;
+  padding: 5px;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+.linkedin:hover {
+  background-color: #0052d4;
+  padding: 5px;
+  transform: scale(1.2);
+  border-radius: 5px;
+}
+
+/*  Media Querry */
+
+@media only screen and (max-width: 760px) {
+  .Footer {
+    text-align: center;
+  }
+  .Footer h4 {
+    font: normal normal bold 24px "Merriweather";
+  }
+  .Footer p {
+    font: normal normal normal 17px "Merriweather";
+  }
+  .footer-left {
+    margin-bottom: 20px;
+  }
+  .footer-right {
+    margin-top: 20px;
+  }
+}
